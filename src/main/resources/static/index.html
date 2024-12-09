@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spring Webdemo</title>
+    <link rel="stylesheet" href="index.css"/>
+  </head>
+
+  <body>
+    <h1>Spring Websocket Demo</h1>
+    <br>
+
+    <div class="join-container">
+      <label for="username">Username</label>
+      <div class="input-control">
+        <input type="text" id="username" placeholder="Jhon Doe"/>
+        <button type="button" onclick="connect()">Connect</button>
+      </div>
+    </div>
+
+    <div class="chat-container">
+      <div class="connecting hide">
+        <span>connecting...</span>
+      </div>
+
+      <ul class="chat-list" id="message-area"></ul>
+    </div>
+
+    <div class="send-container input-control">
+      <input type="text"placeholder="Enter Message" id="message"/>
+      <button type="button" onclick="sendMessage()">Send</button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sockjs-client@1.6.1/dist/sockjs.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/stomp.js/2.3.3/stomp.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>

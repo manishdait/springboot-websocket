@@ -1,0 +1,86 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  color: #242424;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  align-items: center;
+  padding: 1em;
+}
+
+.join-container {
+  width: min(100%, 800px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.input-control {
+  display: flex;
+  gap: .2em;
+}
+.input-control label {
+  font-size: .9rem;
+}
+.input-control input {
+  width: 100%;
+  font-size: 1rem;
+  padding: .5em;
+  outline: transparent;
+  border: .1em solid #ddd;
+  border-radius: .2em;
+}
+.input-control input:focus {
+  border-color: #242424;
+}
+
+.input-control button {
+  font-size: 1rem;
+  padding: .5em;
+  outline: transparent;
+  border: .1em solid #75eb15;
+  background-color: #75eb15;
+  color: #fff;
+  cursor: pointer;
+  border-radius: .2em;
+}
+.input-control button:hover {
+  background-color: #67d60b;
+  border-color: #67d60b;
+}
+
+.chat-container {
+  padding: 1em;
+  width: min(100%, 800px);
+  height: 100%;
+  border: .1em solid #ddd;
+  border-radius: .2em;
+}
+
+.send-container {
+  width: min(100%, 800px);
+}
+
+.connecting {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hide {
+  display: none;
+  visibility:hidden;
+}
